@@ -1,4 +1,4 @@
-name: Run all tests
+name: Github Classroom workflow
 on:
   push:
     branches:
