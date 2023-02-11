@@ -1,0 +1,19 @@
+name: Run all tests
+on:
+  push:
+    branches:
+      - master
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Node setup
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14.18.0
+      - name: Install dependency
+        run: npm install
+      - name: Unit test
+        run: npm run test

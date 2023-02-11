@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Check assignment requirements",
+      "setup": "",
+      "run": "npx jest ./src/index.test.js",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    }
+  ]
+}
